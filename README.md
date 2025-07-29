@@ -1,23 +1,5 @@
 # CuckooPC-Simulation
 
-CuckooPC-Simulation-Repo/
-│
-├── README.md
-├── requirements.txt
-│
-├── cuckoopc/
-│   ├── __init__.py
-│   ├── pso.py
-│   ├── cuckoo.py
-│   ├── smoothers.py
-│   └── comparison.py
-│
-├── notebooks/
-│   └── CuckooPC-Simulation.ipynb (you can add your notebook here)
-│
-└── tests/
-    └── test_cuckoo_vs_pso.py (optional tests can be added)
-
 This repository implements **Principal Curve Estimation** using:
 1. The classical **Hastie & Stuetzle algorithm**.
 2. A **Particle Swarm Optimization (PSO)** approach.
