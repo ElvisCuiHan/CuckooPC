@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="figures/cuckoopc.png" alt="CuckooPC Simulation Demo" width="500"/>
+</p>
+
 # <span style="color:#4A90E2;">CuckooPC-Simulation</span>
 
 <span style="color:#4A90E2; font-weight:bold;">CuckooPC-Simulation</span> is a Python project for 
