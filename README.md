@@ -129,13 +129,7 @@ curve_pso, omega_pso, cost_pso, history_pso = estimate_principal_curve_pso(Y)
 If you use this work, please cite:
 
 ```bibtex
-@misc{cuckoo_applications_2024,
-  title   = {Novel Applications of Cuckoo Search Algorithm},
-  author  = {Elvis Han Cui and Heather Xihe Yu and Weng Kee Wong and Guanghao Qi},
-  year    = {2024},
-  url     = {https://github.com/YourUsername/CuckooSearch-Applications},
-  note    = {Preprint under review at EJOR}
-}
+Cui, E. H., Yu, H. X., Wong, W. K., & Qi, G. (2024). Novel applications of the Cuckoo Search algorithm: Design, bioinformatics, and big data. Preprint under review at the European Journal of Operational Research. Retrieved from https://github.com/ElvisCuiHan/CuckooPC
 ```
 
 #### 🔗 Theoretical Foundation
