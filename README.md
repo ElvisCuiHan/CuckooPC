@@ -16,9 +16,9 @@ A nature-inspired optimization toolkit across disciplines: from experimental des
   <a href="#"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.procs.2025.xx.xxx-blue.svg" alt="DOI"></a>
 </p>
 
----
-
-🚀 [Quick Start](#quick-start) • 📱 [Interactive App](#interactive-application) • 📖 [Paper](#paper) • 🔍 [Examples](#examples) • 🤝 [Contribution](#contribution)
+<p align="center">
+🚀 <a href="#quick-start">Quick Start</a> • 📱 <a href="#-interactive-application">Interactive App</a> • 📖 <a href="#-paper">Paper</a> • 🔍 <a href="#examples">Examples</a> • 🤝 <a href="#-contribution">Contribution</a>
+</p>
 
 ---
 
@@ -28,7 +28,8 @@ This repository contains the complete implementation of Cuckoo Search (CS) algor
 
 Our work demonstrates the power of nature-inspired metaheuristic algorithms in solving complex optimization problems across disciplines, with a particular focus on Operations Research methodology and data-driven decision support systems.
 
-> 🔥 **Why Cuckoo Search?** Unlike traditional optimization methods, CS excels at navigating complex, non-convex landscapes with **global search capabilities** and **minimal parameter tuning**. Perfect for real-world problems where gradients don't exist or are unreliable.
+> 🔥 **Why Cuckoo Search?**  
+> Unlike traditional optimization methods, CS excels at navigating complex, non-convex landscapes with **global search capabilities** and **minimal parameter tuning**. Perfect for real-world problems where gradients don't exist or are unreliable.
 
 ---
 
@@ -51,7 +52,7 @@ Our work demonstrates the power of nature-inspired metaheuristic algorithms in s
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start {#quick-start}
 
 ### Repository Structure
 ```bash
@@ -67,16 +68,14 @@ CuckooPC-Simulation/
 └── tests/              # Unit tests and validation scripts
 └── README.md           # This file
 
-
-### Installation
+## 🚀 Installation
 
 Clone the repository:
 
-``` bash
+```bash
 git clone https://github.com/YourUsername/CuckooSearch-Applications.git
 cd CuckooSearch-Applications
 pip install -r requirements.txt
-```
 
 Install R dependencies:
 
@@ -84,30 +83,28 @@ Install R dependencies:
 install.packages(c('shiny', 'shinydashboard', 'DT', 'plotly', 'ggplot2', 'dplyr', 'MASS', 'pracma'))
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 📱 Interactive Application
 
-::: {align="center"}
 ### 🧬 scGTM Analysis Tool
 
-Live Demo: <https://heatheryu.shinyapps.io/scGTMApp/>
+Live Demo: [https://heatheryu.shinyapps.io/scGTMApp/](https://heatheryu.shinyapps.io/scGTMApp/)
 
 A comprehensive R Shiny application for single-cell gene trajectory modeling with Cuckoo Search optimization.
-:::
 
-### Features:
+### Features
 
--   Real-time parameter estimation for scGTM models
--   Support for multiple distributions (ZIP, ZINB, Poisson, NB)
--   Interactive visualization of gene expression patterns
--   Export results and plots
+- Real-time parameter estimation for scGTM models  
+- Support for multiple distributions (ZIP, ZINB, Poisson, NB)  
+- Interactive visualization of gene expression patterns  
+- Export results and plots  
 
-------------------------------------------------------------------------
+---
 
-## 🔍Examples {#examples}
+## 🔍 Examples
 
-```{python}
+```python
 import numpy as np
 from cuckoopc.pso import estimate_principal_curve_pso
 from cuckoopc.cuckoo import estimate_principal_curve_cuckoo
@@ -120,90 +117,79 @@ curve_cs, omega_cs, cost_cs, history_cs = estimate_principal_curve_cuckoo(Y)
 
 # Estimate curve using PSO
 curve_pso, omega_pso, cost_pso, history_pso = estimate_principal_curve_pso(Y)
-```
 
-------------------------------------------------------------------------
+---
 
 ## 📖 Paper
 
 ### 💡 Key Features
 
 #### Algorithm Comparisons
-
--   **scGTM Module**: Cuckoo Search vs. Particle Swarm Optimization (PSO)
--   **Principal Curves**: Cuckoo-PC vs. Enhanced Hastie-Stuetzle algorithm
+- **scGTM Module**: Cuckoo Search vs. Particle Swarm Optimization (PSO)  
+- **Principal Curves**: Cuckoo-PC vs. Enhanced Hastie–Stuetzle algorithm  
 
 #### Performance Evaluation
-
--   **L2 distance** to the true curve
--   **Data fitting quality** assessment
--   **Hausdorff distance** measurement
--   **Length preservation ratio**
--   **Computation time** analysis
+- **L2 distance** to the true curve  
+- **Data fitting quality** assessment  
+- **Hausdorff distance** measurement  
+- **Length preservation ratio**  
+- **Computation time** analysis  
 
 #### Visualization & Tools
-
--   Interactive R Shiny application for scGTM analysis
--   Performance comparison charts
--   3D curve reconstruction visualization
--   Automated LaTeX table generation
+- Interactive R Shiny application for scGTM analysis  
+- Performance comparison charts  
+- 3D curve reconstruction visualization  
+- Automated LaTeX table generation  
 
 #### Technical Capabilities
+- Exact design optimization for small sample sizes  
+- Constrained maximum likelihood estimation  
+- Multiple distance metrics and smoothing methods  
+- Robustness analysis across parameter variations  
 
--   Exact design optimization for small sample sizes
--   Constrained maximum likelihood estimation
--   Multiple distance metrics and smoothing methods
--   Robustness analysis across parameter variations
+---
 
 ### 📊 Performance Highlights
 
 #### Bioinformatics (scGTM)
-
--   **Superior optimization**: Cuckoo Search outperformed PSO in **17 out of 20** genes
--   **Statistical significance**: Wilcoxon signed-rank test p-value = 0.00077
--   **Robust parameter estimation** for zero-inflated Poisson models
+- **Superior optimization**: Cuckoo Search outperformed PSO in **17 out of 20** genes  
+- **Statistical significance**: Wilcoxon signed-rank test p-value = 0.00077  
+- **Robust parameter estimation** for zero-inflated Poisson models  
 
 #### Principal Curves
-
--   Dramatic improvements in complex scenarios (Heart, Elvis configurations)
--   Consistent superiority across all accuracy metrics vs. Hastie-Stuetzle
--   Near-perfect length preservation (ratio ≈ 1.0) across all scenarios
--   Enhanced stability under varying noise conditions
+- Dramatic improvements in complex scenarios (Heart, Elvis configurations)  
+- Consistent superiority across all accuracy metrics vs. Hastie–Stuetzle  
+- Near-perfect length preservation (ratio ≈ 1.0) across all scenarios  
+- Enhanced stability under varying noise conditions  
 
 #### Experimental Design
+- Optimal exact designs for small sample sizes (n=10–15)  
+- Efficient D-optimal solutions for Emax models with AR(1) correlation  
+- Robustness analysis across different parameter combinations  
 
--   Optimal exact designs for small sample sizes (n=10-15)
--   Efficient D-optimal solutions for Emax models with AR(1) correlation
--   Robustness analysis across different parameter combinations
-
-### 📄 Citation & References
-
-#### 📝 Current Status
-
-This work is currently under review. Pre-print available at: [...]
+---
 
 #### 💭 How to Cite
-
 If you use this work, please cite:
 
-``` bibtex
-@...
+```bibtex
+@misc{cuckoo_applications_2024,
+  title   = {Novel Applications of Cuckoo Search Algorithm},
+  author  = {Elvis Han Cui and Heather Xihe Yu and Weng Kee Wong and Guanghao Qi},
+  year    = {2024},
+  url     = {https://github.com/YourUsername/CuckooSearch-Applications},
+  note    = {Preprint under review at EJOR}
 }
-```
 
 #### 🔗 Theoretical Foundation
-
 Built upon key methodological advances in:
 
--   Cuckoo Search optimization (Yang & Deb, 2009)
+- [Cuckoo Search optimization (Yang & Deb, 2009)](https://doi.org/10.1109/NABIC.2009.5393690)  
+- [D-optimal design theory (Atkinson, Donev & Tobias, 2007)](https://doi.org/10.1007/978-0-387-98135-6)  
+- [Single-cell trajectory analysis (Trapnell et al., 2014, *Nature Biotechnology*)](https://doi.org/10.1038/nbt.2859)  
+- [Principal curve estimation techniques (Hastie & Stuetzle, 1989, *JASA*)](https://doi.org/10.1080/01621459.1989.10478797)  
 
--   D-optimal design theory (Atkinson et al., 2007)
-
--   Single-cell trajectory analysis (Trapnell et al., 2014)
-
--   Principal curve estimation techniques (Hastie & Stuetzle, 1989)
-
-------------------------------------------------------------------------
+---
 
 ## 🤝 Contribution
 
@@ -211,15 +197,19 @@ We welcome contributions to improve and extend this work! Whether it's bug fixes
 
 ### 👥 Contributors
 
--   [**\@ElvisCuiHan**](https://github.com/ElvisCuiHan) - Original implementation and research
--   [**\@roxberry119**](https://github.com/roxberry119) - Single-cell genomics application
+- [**@ElvisCuiHan**](https://github.com/ElvisCuiHan) - Original implementation and research  
+- [**@roxberry119**](https://github.com/roxberry119) - Single-cell genomics application  
 
 ### 🚀 How to Contribute
 
-Feel free to: - Report issues or suggest improvements - Submit pull requests for bug fixes - Propose new applications or extensions - Improve documentation and examples
+Feel free to:  
+- Report issues or suggest improvements  
+- Submit pull requests for bug fixes  
+- Propose new applications or extensions  
+- Improve documentation and examples  
 
 For major changes, please open an issue first to discuss your ideas.
 
-------------------------------------------------------------------------
+---
 
-**Questions?** Feel free to reach out through GitHub issues or email [[elviscuihan\@g.ucla.edu](mailto:elviscuihan@g.ucla.edu){.email}]
+**Questions?** Feel free to reach out through GitHub issues or email [elviscuihan@g.ucla.edu](mailto:elviscuihan@g.ucla.edu)
