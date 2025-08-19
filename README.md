@@ -67,6 +67,7 @@ CuckooPC-Simulation/
 ├── notebooks/          # Jupyter notebooks for experiments
 └── tests/              # Unit tests and validation scripts
 └── README.md           # This file
+```
 
 ## 🚀 Installation
 
@@ -76,6 +77,7 @@ Clone the repository:
 git clone https://github.com/YourUsername/CuckooSearch-Applications.git
 cd CuckooSearch-Applications
 pip install -r requirements.txt
+```
 
 Install R dependencies:
 
@@ -181,6 +183,7 @@ If you use this work, please cite:
   url     = {https://github.com/YourUsername/CuckooSearch-Applications},
   note    = {Preprint under review at EJOR}
 }
+```
 
 #### 🔗 Theoretical Foundation
 Built upon key methodological advances in:
