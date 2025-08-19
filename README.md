@@ -52,7 +52,7 @@ Our work demonstrates the power of nature-inspired metaheuristic algorithms in s
 
 ---
 
-## 🚀 Quick Start {#quick-start}
+## 🚀 Quick Start
 
 ### Repository Structure
 ```bash
