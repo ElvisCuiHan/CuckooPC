@@ -71,11 +71,11 @@ CuckooPC-Simulation/
 
 ## 🚀 Installation
 
-Clone the repository:
+Clone the repository and install Python dependencies:
 
 ```bash
-git clone https://github.com/YourUsername/CuckooSearch-Applications.git
-cd CuckooSearch-Applications
+git clone https://github.com/ElvisCuiHan/CuckooPC.git
+cd CuckooPC
 pip install -r requirements.txt
 ```
 
