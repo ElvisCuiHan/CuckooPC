@@ -66,3 +66,160 @@ CuckooPC-Simulation/
 ├── notebooks/          # Jupyter notebooks for experiments
 └── tests/              # Unit tests and validation scripts
 └── README.md           # This file
+
+
+### Installation
+
+Clone the repository:
+
+``` bash
+git clone https://github.com/YourUsername/CuckooSearch-Applications.git
+cd CuckooSearch-Applications
+pip install -r requirements.txt
+```
+
+Install R dependencies:
+
+```{r}
+install.packages(c('shiny', 'shinydashboard', 'DT', 'plotly', 'ggplot2', 'dplyr', 'MASS', 'pracma'))
+```
+
+------------------------------------------------------------------------
+
+## 📱 Interactive Application
+
+::: {align="center"}
+### 🧬 scGTM Analysis Tool
+
+Live Demo: <https://heatheryu.shinyapps.io/scGTMApp/>
+
+A comprehensive R Shiny application for single-cell gene trajectory modeling with Cuckoo Search optimization.
+:::
+
+### Features:
+
+-   Real-time parameter estimation for scGTM models
+-   Support for multiple distributions (ZIP, ZINB, Poisson, NB)
+-   Interactive visualization of gene expression patterns
+-   Export results and plots
+
+------------------------------------------------------------------------
+
+## 🔍Examples {#examples}
+
+```{python}
+import numpy as np
+from cuckoopc.pso import estimate_principal_curve_pso
+from cuckoopc.cuckoo import estimate_principal_curve_cuckoo
+
+# Example data
+Y = np.random.rand(100, 2)
+
+# Estimate curve using Cuckoo Search
+curve_cs, omega_cs, cost_cs, history_cs = estimate_principal_curve_cuckoo(Y)
+
+# Estimate curve using PSO
+curve_pso, omega_pso, cost_pso, history_pso = estimate_principal_curve_pso(Y)
+```
+
+------------------------------------------------------------------------
+
+## 📖 Paper
+
+### 💡 Key Features
+
+#### Algorithm Comparisons
+
+-   **scGTM Module**: Cuckoo Search vs. Particle Swarm Optimization (PSO)
+-   **Principal Curves**: Cuckoo-PC vs. Enhanced Hastie-Stuetzle algorithm
+
+#### Performance Evaluation
+
+-   **L2 distance** to the true curve
+-   **Data fitting quality** assessment
+-   **Hausdorff distance** measurement
+-   **Length preservation ratio**
+-   **Computation time** analysis
+
+#### Visualization & Tools
+
+-   Interactive R Shiny application for scGTM analysis
+-   Performance comparison charts
+-   3D curve reconstruction visualization
+-   Automated LaTeX table generation
+
+#### Technical Capabilities
+
+-   Exact design optimization for small sample sizes
+-   Constrained maximum likelihood estimation
+-   Multiple distance metrics and smoothing methods
+-   Robustness analysis across parameter variations
+
+### 📊 Performance Highlights
+
+#### Bioinformatics (scGTM)
+
+-   **Superior optimization**: Cuckoo Search outperformed PSO in **17 out of 20** genes
+-   **Statistical significance**: Wilcoxon signed-rank test p-value = 0.00077
+-   **Robust parameter estimation** for zero-inflated Poisson models
+
+#### Principal Curves
+
+-   Dramatic improvements in complex scenarios (Heart, Elvis configurations)
+-   Consistent superiority across all accuracy metrics vs. Hastie-Stuetzle
+-   Near-perfect length preservation (ratio ≈ 1.0) across all scenarios
+-   Enhanced stability under varying noise conditions
+
+#### Experimental Design
+
+-   Optimal exact designs for small sample sizes (n=10-15)
+-   Efficient D-optimal solutions for Emax models with AR(1) correlation
+-   Robustness analysis across different parameter combinations
+
+### 📄 Citation & References
+
+#### 📝 Current Status
+
+This work is currently under review. Pre-print available at: [...]
+
+#### 💭 How to Cite
+
+If you use this work, please cite:
+
+``` bibtex
+@...
+}
+```
+
+#### 🔗 Theoretical Foundation
+
+Built upon key methodological advances in:
+
+-   Cuckoo Search optimization (Yang & Deb, 2009)
+
+-   D-optimal design theory (Atkinson et al., 2007)
+
+-   Single-cell trajectory analysis (Trapnell et al., 2014)
+
+-   Principal curve estimation techniques (Hastie & Stuetzle, 1989)
+
+------------------------------------------------------------------------
+
+## 🤝 Contribution
+
+We welcome contributions to improve and extend this work! Whether it's bug fixes, new features, or additional applications of the Cuckoo Search algorithm, your input is valuable.
+
+### 👥 Contributors
+
+-   [**\@ElvisCuiHan**](https://github.com/ElvisCuiHan) - Original implementation and research
+-   [**\@roxberry119**](https://github.com/roxberry119) - Single-cell genomics application
+
+### 🚀 How to Contribute
+
+Feel free to: - Report issues or suggest improvements - Submit pull requests for bug fixes - Propose new applications or extensions - Improve documentation and examples
+
+For major changes, please open an issue first to discuss your ideas.
+
+------------------------------------------------------------------------
+
+**Questions?** Feel free to reach out through GitHub issues or email [[elviscuihan\@g.ucla.edu](mailto:elviscuihan@g.ucla.edu){.email}]
