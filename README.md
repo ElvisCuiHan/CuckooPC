@@ -1,7 +1,7 @@
 # Novel Applications of Cuckoo Search: Design, Bioinformatics, and Big Data
 
 <p align="center">
-  <img src="banner.jpg" alt="Banner" width="80%"/>
+  <img src="cuckoopc.jpg" alt="Banner" width="80%"/>
 </p>
 
 <p align="center">
