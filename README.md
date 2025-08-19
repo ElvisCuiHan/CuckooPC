@@ -117,6 +117,7 @@ curve_cs, omega_cs, cost_cs, history_cs = estimate_principal_curve_cuckoo(Y)
 
 # Estimate curve using PSO
 curve_pso, omega_pso, cost_pso, history_pso = estimate_principal_curve_pso(Y)
+```
 
 ---
 
