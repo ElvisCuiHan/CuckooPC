@@ -125,53 +125,6 @@ curve_pso, omega_pso, cost_pso, history_pso = estimate_principal_curve_pso(Y)
 
 ## 📖 Paper
 
-### 💡 Key Features
-
-#### Algorithm Comparisons
-- **scGTM Module**: Cuckoo Search vs. Particle Swarm Optimization (PSO)  
-- **Principal Curves**: Cuckoo-PC vs. Enhanced Hastie–Stuetzle algorithm  
-
-#### Performance Evaluation
-- **L2 distance** to the true curve  
-- **Data fitting quality** assessment  
-- **Hausdorff distance** measurement  
-- **Length preservation ratio**  
-- **Computation time** analysis  
-
-#### Visualization & Tools
-- Interactive R Shiny application for scGTM analysis  
-- Performance comparison charts  
-- 3D curve reconstruction visualization  
-- Automated LaTeX table generation  
-
-#### Technical Capabilities
-- Exact design optimization for small sample sizes  
-- Constrained maximum likelihood estimation  
-- Multiple distance metrics and smoothing methods  
-- Robustness analysis across parameter variations  
-
----
-
-### 📊 Performance Highlights
-
-#### Bioinformatics (scGTM)
-- **Superior optimization**: Cuckoo Search outperformed PSO in **17 out of 20** genes  
-- **Statistical significance**: Wilcoxon signed-rank test p-value = 0.00077  
-- **Robust parameter estimation** for zero-inflated Poisson models  
-
-#### Principal Curves
-- Dramatic improvements in complex scenarios (Heart, Elvis configurations)  
-- Consistent superiority across all accuracy metrics vs. Hastie–Stuetzle  
-- Near-perfect length preservation (ratio ≈ 1.0) across all scenarios  
-- Enhanced stability under varying noise conditions  
-
-#### Experimental Design
-- Optimal exact designs for small sample sizes (n=10–15)  
-- Efficient D-optimal solutions for Emax models with AR(1) correlation  
-- Robustness analysis across different parameter combinations  
-
----
-
 #### 💭 How to Cite
 If you use this work, please cite:
 
