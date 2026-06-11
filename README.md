@@ -64,6 +64,18 @@ CuckooPC-Simulation/
 │   ├── smoothers.py    # Spline fitting and loss functions
 │   └── comparison.py   # Visualization and performance evaluation
 │
+├── examples/           # Reproducible scripts
+│   └── generate_synthetic_datasets.py
+│
+├── data/synthetic/     # Generated synthetic principal-curve datasets
+│   ├── spiral_i.csv
+│   ├── spiral_ii.csv
+│   ├── heart.csv
+│   ├── butterfly.csv
+│   ├── pedal.csv
+│   ├── elvis.csv
+│   └── metadata.json
+│
 ├── notebooks/          # Jupyter notebooks for experiments
 └── tests/              # Unit tests and validation scripts
 └── README.md           # This file
@@ -84,6 +96,25 @@ Install R dependencies:
 ```{r}
 install.packages(c('shiny', 'shinydashboard', 'DT', 'plotly', 'ggplot2', 'dplyr', 'MASS', 'pracma'))
 ```
+
+---
+
+## Data Availability and Reproducibility
+
+The synthetic principal-curve datasets used in the manuscript can be
+regenerated directly from this repository:
+
+```bash
+python examples/generate_synthetic_datasets.py --output data/synthetic --seed 42 --n 120
+```
+
+Generated CSV files and metadata are included in `data/synthetic/`.  The
+standalone data availability note is available in
+[`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md).
+
+The single-cell RNA-seq data used in the scGTM example are publicly available
+from GEO accession
+[`GSE111976`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111976).
 
 ---
 
